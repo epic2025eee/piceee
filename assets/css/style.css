@@ -423,6 +423,15 @@ section {
 .section-title {
   text-align: center;
 }
+
+.section-title-white {
+  color: #ffffff;
+}
+
+.section-title-color {
+  color: #054a85;
+}
+
 .section-title h2 {
   font-size: 32px;
   font-weight: bold;
@@ -701,8 +710,7 @@ section {
 
 .swiper {
       width: 100%;
-      height: 100vh;
-    }
+      }
     .swiper-slide {
       display: flex;
       align-items: center;
