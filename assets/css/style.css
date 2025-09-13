@@ -412,6 +412,42 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 28px;
   }
 }
+
+/* Sticky Social Icons (Right Side) */
+.sticky-social-icons {
+  position: fixed;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  z-index: 1100;
+}
+
+.sticky-social-icons a {
+  color: #fff;
+  font-size: 20px;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2px 0;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+/* Brand Background Colors */
+.sticky-social-icons a.linkedin { background: #0a66c2; }
+.sticky-social-icons a.instagram { background: #e4405f; }
+.sticky-social-icons a.youtube { background: #ff0000; }
+.sticky-social-icons a.whatsapp { background: #25d366; }
+
+.sticky-social-icons a:hover {
+  opacity: 0.85;
+}
+
+
 /* Sections General*/
 section {
   padding: 25px 0;
