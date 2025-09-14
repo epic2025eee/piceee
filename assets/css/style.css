@@ -715,6 +715,30 @@ section h3, section .subsection-title {
   color: #00bcd4;
 }
 /* Carousel Styles */
+.hero-section {
+  background: url('"../img/general/Hero-bg.webp"') no-repeat center center;
+  background-size: cover;   /* Ensures image covers entire hero */
+  min-height: 100vh;        /* Full screen height */
+  position: relative;
+  padding: 0;
+}
+
+/* Dark overlay for readability */
+.hero-section::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0, 0, 0, 0.55); /* adjust darkness */
+  z-index: 1;
+}
+
+/* Content sits above overlay */
+.hero-section .container {
+  position: relative;
+  z-index: 2;
+}
+
 .hero-carousel {
   position: relative;
   overflow: hidden;
