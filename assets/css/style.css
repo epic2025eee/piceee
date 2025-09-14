@@ -498,9 +498,6 @@ section {
 .section-bg {
   background-color: #fff;
 }
-.section-title {
-  text-align: center;
-}
 
 .section-title-white {
   color: #ffffff;
@@ -521,6 +518,52 @@ section {
   margin-bottom: 0;
   font-style: italic;
 }
+
+/* General heading margin for section titles */
+section h2, section .section-title { /* adjust selectors as in your HTML */
+  margin-top: 2.5rem;    /* space above heading */
+  margin-bottom: 1.5rem; /* space below heading */
+  padding-left: 0.5rem;   /* optional: give some left padding on small screens */
+  padding-right: 0.5rem;  /* optional right padding */
+	text-align: center;
+}
+
+/* Smaller margin for subheadings or h3/h4, etc. */
+section h3, section .subsection-title {
+  margin-top: 1.75rem;
+  margin-bottom: 1rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  section h2, section .section-title {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    font-size: 1.6rem; /* reduce heading font size on small screens if needed */
+  }
+  
+  section h3, section .subsection-title {
+    margin-top: 1.25rem;
+    margin-bottom: 0.75rem;
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 576px) {
+  section h2, section .section-title {
+    margin-top: 1.5rem;
+    margin-bottom: 0.75rem;
+    font-size: 1.4rem;
+  }
+  
+  section h3, section .subsection-title {
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+  }
+}
+
+
 /* About us */
 .about-tabs-section {
   padding: 60px 20px;
