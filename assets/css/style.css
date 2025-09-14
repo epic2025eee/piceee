@@ -455,39 +455,40 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-/* Sticky Social Icons (Right Side) */
-.sticky-social-icons {
+.social-sidebar {
   position: fixed;
-  top: 50%;
-  right: 0;
-  transform: translateY(-50%);
+  top: 40%;
+  right: -60px; /* hidden by default */
   display: flex;
   flex-direction: column;
-  z-index: 1100;
+  gap: 10px;
+  z-index: 1000;
+  transition: right 0.4s ease-in-out;
 }
 
-.sticky-social-icons a {
-  color: #fff;
-  font-size: 20px;
-  width: 44px;
-  height: 44px;
+.social-sidebar a {
   display: flex;
-  align-items: center;
   justify-content: center;
-  margin: 2px 0;
+  align-items: center;
+  width: 45px;
+  height: 45px;
+  background: #333;
+  color: #fff;
+  border-radius: 8px;
+  font-size: 20px;
   text-decoration: none;
-  transition: 0.3s;
+  transition: background 0.3s;
 }
 
-/* Brand Background Colors */
-.sticky-social-icons a.linkedin { background: #0a66c2; }
-.sticky-social-icons a.instagram { background: #e4405f; }
-.sticky-social-icons a.youtube { background: #ff0000; }
-.sticky-social-icons a.whatsapp { background: #25d366; }
-
-.sticky-social-icons a:hover {
-  opacity: 0.85;
+.social-sidebar a:hover {
+  background: #007bff;
 }
+
+/* Reveal on hover */
+.social-sidebar:hover {
+  right: 10px;
+}
+
 
 
 /* Sections General*/
