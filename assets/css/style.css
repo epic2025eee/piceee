@@ -39,7 +39,6 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-animation: animate-preloader 1s linear infinite;
   animation: animate-preloader 1s linear infinite;
 }
-
 @-webkit-keyframes animate-preloader {
   0% {
     transform: rotate(0deg);
@@ -169,6 +168,11 @@ h1, h2, h3, h4, h5, h6 {
   white-space: nowrap;
   transition: 0.3s;
   position: relative;
+}
+nav a.active {
+  color: #ff6600; /* highlight color */
+  font-weight: bold; /* optional */
+  border-bottom: 2px solid #ff6600; /* optional underline */
 }
 .navbar a i, .navbar a:focus i {
   font-size: 12px;
@@ -344,17 +348,14 @@ h1, h2, h3, h4, h5, h6 {
 .navbar-toggler {
   border: none; /* optional, cleaner look */
 }
-
 /* If using dark background, ensure icon is visible */
 .navbar-dark .navbar-toggler-icon {
   filter: invert(1); /* or use appropriate SVG color override */
 }
-
 /* If icon not appearing because background-image missing, you can force show: */
 .navbar-toggler-icon {
   background-image: url("data:image/svg+xml;charset=utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'><path stroke='rgba(0,0,0,0.5)' stroke-width='2' stroke-linecap='round' d='M4 7h22M4 15h22M4 23h22'/></svg>");
 }
-
 /* Mobile responsive tweaks */
 @media (max-width: 992px) {
   /* ensure toggler is visible */
@@ -362,26 +363,20 @@ h1, h2, h3, h4, h5, h6 {
     display: block;
   }
 }
-
 .navbar-toggler {
   border: none; /* optional */
 }
-
 .navbar-toggler-icon {
   color: #fff; /* ensure icon is visible */
 }
-
 /* If using dark background for header */
 .navbar-dark .navbar-toggler-icon {
   filter: invert(1);
 }
-
 /* Fallback�force show the icon if missing */
 .navbar-toggler-icon {
   background-image: url("data:image/svg+xml;charset=utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'><path stroke='rgba(255,255,255,0.8)' stroke-width='2' stroke-linecap='round' d='M4 7h22M4 15h22M4 23h22'/></svg>");
 }
-
-
 /*Header*/
 #hero {
   width: 100%;
@@ -454,7 +449,6 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 28px;
   }
 }
-
 .social-sidebar {
   position: fixed;
   top: 40%;
@@ -465,7 +459,6 @@ h1, h2, h3, h4, h5, h6 {
   z-index: 1000;
   transition: right 0.4s ease-in-out;
 }
-
 .social-sidebar a {
   display: flex;
   justify-content: center;
@@ -479,18 +472,13 @@ h1, h2, h3, h4, h5, h6 {
   text-decoration: none;
   transition: background 0.3s;
 }
-
 .social-sidebar a:hover {
   background: #007bff;
 }
-
 /* Reveal on hover */
 .social-sidebar:hover {
   right: 10px;
 }
-
-
-
 /* Sections General*/
 section {
   padding: 25px 0;
@@ -499,15 +487,12 @@ section {
 .section-bg {
   background-color: #fff;
 }
-
 .section-title-white {
   color: #ffffff;
 }
-
 .section-title-color {
   color: #054a85;
 }
-
 .section-title h2 {
   font-size: 32px;
   font-weight: bold;
@@ -519,164 +504,138 @@ section {
   margin-bottom: 0;
   font-style: italic;
 }
-
 /* General heading margin for section titles */
 section h2, section .section-title { /* adjust selectors as in your HTML */
-  margin-top: 2.5rem;    /* space above heading */
+  margin-top: 2.5rem; /* space above heading */
   margin-bottom: 1.5rem; /* space below heading */
-  padding-left: 0.5rem;   /* optional: give some left padding on small screens */
-  padding-right: 0.5rem;  /* optional right padding */
-	text-align: center;
+  padding-left: 0.5rem; /* optional: give some left padding on small screens */
+  padding-right: 0.5rem; /* optional right padding */
+  text-align: center;
 }
-
 /* Smaller margin for subheadings or h3/h4, etc. */
 section h3, section .subsection-title {
   margin-top: 1.75rem;
   margin-bottom: 1rem;
 }
-
 /* Responsive adjustments */
 @media (max-width: 768px) {
   section h2, section .section-title {
     margin-top: 2rem;
     margin-bottom: 1rem;
-    font-size: 1.6rem; 
-/* reduce heading font size on small screens if needed */
+    font-size: 1.6rem;
+    /* reduce heading font size on small screens if needed */
   }
-  
   section h3, section .subsection-title {
     margin-top: 1.25rem;
     margin-bottom: 0.75rem;
     font-size: 1.3rem;
   }
 }
-
 @media (max-width: 576px) {
   section h2, section .section-title {
     margin-top: 1.5rem;
     margin-bottom: 0.75rem;
     font-size: 1.4rem;
   }
-  
   section h3, section .subsection-title {
     margin-top: 1rem;
     margin-bottom: 0.5rem;
     font-size: 1.1rem;
   }
 }
-
-
 /* About us */
 .about-tabs-section {
   padding: 60px 20px;
 }
-
 .tabs {
-    width: 100%;
-  }
-
-  .tab-buttons {
+  width: 100%;
+}
+.tab-buttons {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
-
 .tab-btn {
   background: none;
   border: none;
   color: #333;
   cursor: pointer;
-  font-weight:200;
+  font-weight: 200;
   font-size: 16px;
   margin: 0;
   padding: 10px 16px;
   transition: color 0.3s ease;
   border-radius: 0;
 }
-
 /* Hover effect: only text color changes */
 .tab-btn:hover {
   color: #007BFF;
 }
-
 /* Active tab: colored text + bottom-rounded */
 .tab-btn.active {
   color: #007BFF;
   border-bottom-left-radius: 15px;
   border-bottom-right-radius: 15px;
 }
-
-  .tab-content {
-    width: 100%;
-  }
-
-  .tab-pane {
-    display: none;
-    width: 100%;
-    padding: 0;
-  }
-
+.tab-content {
+  width: 100%;
+}
+.tab-pane {
+  display: none;
+  width: 100%;
+  padding: 0;
+}
+.tab-pane.active {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.tab-grid {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  align-items: center;
+}
+.tab-image {
+  flex: 1 1 40%;
+  padding: 10px;
+}
+.tab-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+.tab-text {
+  flex: 1 1 60%;
+  padding: 20px;
+}
+.tab-text h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+.tab-text p {
+  font-size: 16px;
+  line-height: 1.6;
+}
+@media (max-width: 768px) {
   .tab-pane.active {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
+    flex-direction: column;
   }
-
-  .tab-grid {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 100%;
-    align-items: center;
-  }
-
-  .tab-image {
-    flex: 1 1 40%;
+  .tab-image, .tab-text {
+    flex: 1 1 100%;
     padding: 10px;
   }
-
-  .tab-image img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-  }
-
-  .tab-text {
-    flex: 1 1 60%;
-    padding: 20px;
-  }
-
-  .tab-text h3 {
-    font-size: 24px;
-    margin-bottom: 10px;
-  }
-
-  .tab-text p {
-    font-size: 16px;
-    line-height: 1.6;
-  }
-
-  @media (max-width: 768px) {
-    .tab-pane.active {
-      flex-direction: column;
-    }
-    .tab-image, .tab-text {
-      flex: 1 1 100%;
-      padding: 10px;
-    }
-  }
-
+}
 .custom-list {
   list-style: none;
   padding: 0;
 }
-
 .custom-list li {
   position: relative;
   padding-left: 25px;
   margin-bottom: 10px;
 }
-
 .custom-list li::before {
   content: "✔️"; /* or use: "🔹", "➤", etc. */
   position: absolute;
@@ -685,8 +644,6 @@ section h3, section .subsection-title {
   color: #007BFF; /* your brand color */
   font-size: 16px;
 }
-
-
 /* Shadow style when scrolled */
 .main-header.scrolled {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
@@ -719,28 +676,27 @@ section h3, section .subsection-title {
 /* Carousel Styles */
 .hero-section {
   background: url('"../img/general/Hero-bg.webp"') no-repeat center center;
-  background-size: cover;   /* Ensures image covers entire hero */
-  min-height: 100vh;        /* Full screen height */
+  background-size: cover; /* Ensures image covers entire hero */
+  min-height: 100vh; /* Full screen height */
   position: relative;
   padding: 0;
 }
-
 /* Dark overlay for readability */
 .hero-section::before {
   content: "";
   position: absolute;
-  top: 0; left: 0;
-  width: 100%; height: 100%;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   background: rgba(0, 0, 0, 0.55); /* adjust darkness */
   z-index: 1;
 }
-
 /* Content sits above overlay */
 .hero-section .container {
   position: relative;
   z-index: 2;
 }
-
 .hero-carousel {
   position: relative;
   overflow: hidden;
@@ -801,7 +757,6 @@ section h3, section .subsection-title {
   margin-bottom: 0;
   color: #777777;
 }
-
 /*Clients*/
 .clients .swiper-slide img {
   opacity: 0.5;
@@ -854,41 +809,38 @@ section h3, section .subsection-title {
   background-color: #0880e8 !important;
 }
 /*Services*/
-
 .swiper {
-      width: 100%;
-      }
-    .swiper-slide {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 2rem;
-    }
-    .slide-image {
-      flex: 1 1 45%;
-    }
-    .slide-image img {
-      width: 100%;
-      max-width: 500px;
-      border-radius: 10px;
-    }
-    .slide-content {
-      flex: 1 1 50%;
-      padding-left: 2rem;
-    }
-    .slide-content h2 {
-      font-size: 2rem;
-      color: #1e3a8a;
-    }
-    .slide-content p {
-      font-size: 1rem;
-      line-height: 1.6;
-    }
-    .swiper-button-prev,
-    .swiper-button-next {
-      color: #1e3a8a;
-    }
-
+  width: 100%;
+}
+.swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem;
+}
+.slide-image {
+  flex: 1 1 45%;
+}
+.slide-image img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 10px;
+}
+.slide-content {
+  flex: 1 1 50%;
+  padding-left: 2rem;
+}
+.slide-content h2 {
+  font-size: 2rem;
+  color: #1e3a8a;
+}
+.slide-content p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+.swiper-button-prev, .swiper-button-next {
+  color: #1e3a8a;
+}
 /*Team*/
 .flip-card {
   background-color: transparent;
@@ -1086,7 +1038,6 @@ section h3, section .subsection-title {
 #footer .credits:hover {
   color: #ed3c0d;
 }
-
 /* Gallery Section */
 .gallery-section img {
   cursor: pointer;
@@ -1094,5 +1045,5 @@ section h3, section .subsection-title {
 }
 .gallery-section img:hover {
   transform: scale(1.05);
-  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
