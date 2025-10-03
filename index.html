@@ -6,7 +6,6 @@
 <title>Path Identifier Command</title>
 <meta content="" name="description">
 <meta content="" name="keywords">
-	
 <link href="assets/img/general/pic_icon.ico" rel="icon">
 <link href="assets/img/general/pic_icon.ico" rel="apple-touch-icon">
 <link href="assets/css/style.css" rel="stylesheet">
@@ -16,7 +15,6 @@
 <link href="assets/css/owl.carousel-2.3.4.min.css" rel="stylesheet">
 <link href="assets/css/colornip.min.css" rel="stylesheet">
 <link href="assets/css/magnific-popup.css" rel="stylesheet">
-	
 <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" rel="stylesheet">
 <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
 <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
@@ -26,8 +24,6 @@
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" 
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" 
       crossorigin="anonymous" rel="stylesheet" >
-
-
 </head>
 
 <body>
@@ -399,7 +395,6 @@
       <div class="main-video-container"> </div>
     </div>
   </section>
-	
   <section id="uxuiproj" class="uxuiproj section-bg">
     <div class="latest-project-area blue-bg pt-70 pb-70">
       <div class="container">
@@ -692,30 +687,24 @@
     <div class="credits"> Designed by Sri Guru Graphics &amp;amp; Systems </div>
   </div>
 </footer>
-<div id="preloader">
-</div>
-	
+<div id="preloader"> </div>
 <script src="assets/js/main.js"></script> 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script> 
 <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script> 
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> 
-
 <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script> 
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
-<script src="assets/js/jquery-3.4.1.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> 
+<script src="assets/js/jquery-3.4.1.min.js"></script> 
 <script src="assets/js/proj-main.js"></script> 
-<script src="assets/js/popper.min.js"></script>
-
-<script src="assets/js/vendor/colornip.min.js"></script>
-<script src="assets/js/vendor/jquery.scrollUp.min.js"></script>
-<script src="assets/js/vendor/magnific-popup.min.js"></script>
-<script src="assets/js/vendor/modernizr-3.5.0.min.js"></script>
-<script src="assets/js/vendor/owl.carousel-2.3.4.min.js"></script>
-<script src="assets/js/vendor/owl.carousel2.thumbs.min.js"></script>
-<script src="assets/js/vendor/slicknav.min.js"></script>
-<script src="assets/js/vendor/waypoints-4.0.1.min.js"></script>
-
+<script src="assets/js/popper.min.js"></script> 
+<script src="assets/js/vendor/colornip.min.js"></script> 
+<script src="assets/js/vendor/jquery.scrollUp.min.js"></script> 
+<script src="assets/js/vendor/magnific-popup.min.js"></script> 
+<script src="assets/js/vendor/modernizr-3.5.0.min.js"></script> 
+<script src="assets/js/vendor/owl.carousel-2.3.4.min.js"></script> 
+<script src="assets/js/vendor/owl.carousel2.thumbs.min.js"></script> 
+<script src="assets/js/vendor/slicknav.min.js"></script> 
+<script src="assets/js/vendor/waypoints-4.0.1.min.js"></script> 
 <script>
     AOS.init();
 </script> 
@@ -905,6 +894,18 @@
       document.getElementById(tabId).classList.add("active");
     });
   });
+document.addEventListener("DOMContentLoaded", function() {
+  const navLinks = document.querySelectorAll("nav a");  // adjust selector if your nav is different
+
+  navLinks.forEach(link => {
+    link.addEventListener("click", function(e) {
+      // Optionally prevent default scroll jump if using smooth scroll, but usually no need to prevent default
+      navLinks.forEach(l => l.classList.remove("active"));
+      this.classList.add("active");
+    });
+  });
+});
+
 </script>
 </body>
 </html>
