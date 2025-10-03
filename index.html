@@ -893,18 +893,39 @@
       document.getElementById(tabId).classList.add("active");
     });
   });
-document.addEventListener("DOMContentLoaded", function() {
-  const navLinks = document.querySelectorAll("nav a");  // adjust selector if your nav is different
+</script> 
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const navLinks = document.querySelectorAll("nav a");
 
+  // Click highlight
   navLinks.forEach(link => {
-    link.addEventListener("click", function(e) {
-      // Optionally prevent default scroll jump if using smooth scroll, but usually no need to prevent default
+    link.addEventListener("click", function() {
       navLinks.forEach(l => l.classList.remove("active"));
       this.classList.add("active");
     });
   });
-});
 
+  // Scroll spy
+  window.addEventListener("scroll", () => {
+    const sections = document.querySelectorAll("section[id]");
+    let current = "";
+
+    sections.forEach(sec => {
+      const top = sec.offsetTop;
+      if (pageYOffset >= top - 70) {  // adjust 70 to your header height
+        current = sec.getAttribute("id");
+      }
+    });
+
+    navLinks.forEach(link => {
+      link.classList.remove("active");
+      if (link.getAttribute("href") === "#" + current) {
+        link.classList.add("active");
+      }
+    });
+  });
+});
 </script>
 </body>
 </html>
