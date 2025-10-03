@@ -164,17 +164,13 @@ h1, h2, h3, h4, h5, h6 {
   justify-content: space-between;
   padding: 0 4px;
   font-size: 14px;
-  color: rgba(255, 255, 255, 0.7);
+  color: rgba(255, 255, 255, 0.3);
   white-space: nowrap;
   transition: 0.3s;
   position: relative;
   text-decoration: none;
 }
-nav a.active {
-  color: #ff6600; /* highlight color */
-  font-weight: bold; /* optional */
-  border-bottom: 2px solid #ff6600; /* optional underline */
-}
+
 .navbar a i, .navbar a:focus i {
   font-size: 12px;
   line-height: 0;
@@ -196,7 +192,7 @@ nav a.active {
   width: 100%;
 }
 .navbar a:hover, .navbar .active, .navbar .active:focus, .navbar li:hover > a {
-  color: #fff;
+  color: #EF5123;
   text-decoration: none;
 }
 .navbar .dropdown ul {
