@@ -193,7 +193,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .navbar a:hover, .navbar .active, .navbar .active:focus, .navbar li:hover > a {
   color: #FF4F00;
-	font-size: 500;
+	font-weight: 700;
   text-decoration: none;
 }
 .navbar .dropdown ul {
