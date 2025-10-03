@@ -540,7 +540,8 @@ section h3, section .subsection-title {
   section h2, section .section-title {
     margin-top: 2rem;
     margin-bottom: 1rem;
-    font-size: 1.6rem; /* reduce heading font size on small screens if needed */
+    font-size: 1.6rem; 
+/* reduce heading font size on small screens if needed */
   }
   
   section h3, section .subsection-title {
