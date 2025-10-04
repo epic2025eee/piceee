@@ -498,7 +498,7 @@
 	background: #222;
 }
 .blue-bg{
-	background: #032e54;	
+	background: var(--royal-blue);	
 }
 /* Color */
 
