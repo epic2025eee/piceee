@@ -381,7 +381,7 @@ h1, h2, h3, h4, h5, h6 {
   width: 100%;
   height: 80vh;
   overflow: hidden;
-  background: url("../assets/img/general/Hero-bg.webp") top center;
+  background: url("../img/general/hero_bg.webp") top center;
   background-size: cover;
   position: relative;
   margin-bottom: -90px;
