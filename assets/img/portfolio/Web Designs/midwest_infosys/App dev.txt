@@ -1,0 +1,25 @@
+myVariable=To strive and succeed in this dynamic market place, enterprises need to contemplate and evolve to the changing business needs. Also it is critical for the organizations to develop and manage their mission-critical business applications.
+
+   Midwest Information Systems has positioned itself as the global leader in the field of Application development, IT Consulting and Outsourcing Services enabling our clients to develop, deliver, control and manage critical apprehensions of software, thus reducing the overhead expenses and helping to get better returns on investments (ROI).
+
+   We use state-of-the-art technologies in Application Development and Engineering services to translate your IT vision into reality. With our proven track record in application development, application engineering, maintenance and consulting services, we are committed to develop technology-driven solutions that help meeting the changing business environments. We help you in developing right applications that gives you the desired results quickly. i.e. Time to market is quicker and cost of development and ownership is low (TCO).
+
+Phases of Application Management Services:-
+We follow a defined application development and management methodologies that cover all aspects of the software development life cycle (SDLC). Our quality management system ensures that each phase of the SDLC has adequate reviews, controls, and check-points built into the development process. Our application management services are much cost effective and are extensively supported by Offshore Delivery Center (ODC) that provides greater flexibility, scalability and seamless integration. On need basis, our project engagement models include Offshore, Onshore and Near Shore delivery models.
+
+Our Application Management services suite includes
+
+  * Web Application Development — developing and customizing web applications leveraging latest technologies such as Java/ J2EE, VB.NET, ASP.NET, C#.NET, CSS, AJAX, JavaScript, PHP and so on, that can be accessed over Internet or Intranet through web browsers
+  * Application Migration Services — Migrating your current applications to the latest version or to a new technology to optimize the application and performance efficiency
+  * Desktop Application Development — developing secured and scalable desktop applications leveraging latest technologies, tools and platforms customized to your enterprise needs
+
+Key Benefits of Midwest's Application Management Services
+
+•Our Application Management Team consists of Subject Matter Experts in Application Development, Integration, Deployment, Performance, Support and R&D and with customized quality processes applied across each engagement
+•Leads to overall cost optimization and ensures better output
+•Flexible resource model and engagements through our State-of-the-art ‘Application Lab’
+•Increased savings by using best application management system and process engineering
+•Enhancing operational efficiencies through multi-tiered application development approach
+•Faster time to market
+•Lesser maintenance and support cost
+•24×7×365 support

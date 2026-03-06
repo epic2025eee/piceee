@@ -1,0 +1,64 @@
+.section-title h3 {
+  font-size: 30px;
+  font-weight:lighter;
+  text-align: center;
+  text-shadow:2px 2px 5px #881618;
+  color: #881618;
+}
+.blog-carousel.owl-carousel .owl-item img {
+  width: 100%;
+  display: inline-block;
+  float: left;
+  height: auto;
+  padding: 20px;    
+}
+.single-blog-img {
+  position: relative;
+}
+.single-blog-img span {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background: #222;
+  width: 100%;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 11px;
+  padding: 0 10px;
+}
+.blog-content {
+  padding-left: 20px;
+}
+.post-heading {
+  font-size: 20px;
+  font-weight: 800;
+  color:#881618;
+}
+.post-content-text {
+  margin: 0;
+  color: #3a3a3a;
+  font-size: 15px;
+  font-weight: 100;
+  text-align: justify;
+  line-height: 25px;
+}
+.blog-tags {
+  display: inline-block;
+  font-size: 15px;
+  margin-left: 10px;
+  font-weight: 200;
+  line-height: 25px;
+}
+.blog-tags i {
+  font-size: 12px;
+  padding: 20px;
+}
+.blog-tags a {
+  color: #555555;
+  font-weight: 600;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+.blog-tags a:hover {
+  color: #4272d7;
+}
