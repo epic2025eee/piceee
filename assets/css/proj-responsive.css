@@ -108,3 +108,26 @@
 }
  
 }
+
+@media (max-width: 768px) {
+
+  #header {
+    padding: 10px;
+  }
+
+  .navbar-nav {
+    background: #fff;
+    padding: 10px;
+    border-radius: 10px;
+  }
+
+  .navbar-nav li {
+    margin: 10px 0;
+    text-align: center;
+  }
+
+  .navbar-nav a {
+    font-size: 16px;
+  }
+
+}

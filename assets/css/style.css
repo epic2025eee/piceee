@@ -29,6 +29,23 @@ h1, h2, h3, h4, h5, h6 {
 .contact-info {
   float: left;
 }
+.container {
+  width: 100%;
+  max-width: 1000px;
+  margin: auto;
+  padding: 10px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.box {
+  flex: 1 1 300px;
+  margin: 10px;
+}
+
 #preloader {
   position: fixed;
   top: 0;
@@ -73,6 +90,37 @@ h1, h2, h3, h4, h5, h6 {
     transition-delay: 0 !important;
   }
 }
+
+@media (max-width: 768px) {
+  .row {
+    flex-direction: column;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  .box {
+    width: 100%;
+  }
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 #topbar {
   height: 100px;
   padding: 0;
@@ -461,6 +509,120 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 28px;
   }
 }
+
+@media (max-width: 768px) {
+
+  #hero {
+    height: auto;
+    padding: 60px 10px;
+    text-align: center;
+  }
+
+  .carousel-container img {
+    width: 80%;
+    margin-bottom: 20px;
+  }
+
+  .carousel-container h2 {
+    font-size: 22px;
+  }
+
+  .carousel-container p {
+    font-size: 14px;
+  }
+
+}
+
+@media (max-width: 768px) {
+
+  .tab-buttons {
+    display: flex;
+    overflow-x: auto;
+    gap: 10px;
+    padding-bottom: 10px;
+  }
+
+  .tab-btn {
+    white-space: nowrap;
+    font-size: 14px;
+    padding: 8px 12px;
+  }
+
+  .tab-grid {
+    flex-direction: column;
+  }
+
+  .tab-image img {
+    width: 100%;
+    margin-top: 15px;
+  }
+
+}
+
+@media (max-width: 768px) {
+
+  .service-card {
+    margin: 10px 5px;
+  }
+
+  .card-title {
+    font-size: 16px;
+  }
+
+  .card-desc {
+    font-size: 13px;
+  }
+
+}
+
+@media (max-width: 768px) {
+
+  #portfolio .col-md-4 {
+    width: 100%;
+  }
+
+  #portfolio h5 {
+    font-size: 14px;
+  }
+
+}
+
+@media (max-width: 768px) {
+
+  .gallery-section img {
+    border-radius: 10px;
+  }
+
+}
+
+
+.vcontainer {
+  width: 100%;
+  padding: 10px;
+}
+
+
+@media (max-width: 768px) {
+
+  .contact .form-control {
+    margin-bottom: 10px;
+  }
+
+  .contact button {
+    width: 100%;
+    padding: 12px;
+  }
+
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+}
+
 .social-sidebar {
   position: fixed;
   top: 40%;
@@ -1104,12 +1266,11 @@ section h3, section .subsection-title {
   display: none !important;
 }
 /*Team*/
-.flip-card {
-  background-color: transparent;
-  width: 300px;
-  height: 300px;
-  perspective: 1000px;
+.flip-card img {
+  width: 100%;
+  height: auto;
 }
+
 .flip-card-inner {
   position: relative;
   width: 100%;

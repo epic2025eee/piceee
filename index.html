@@ -29,14 +29,12 @@
   <div class="container d-flex align-items-center justify-content-between">
     <div class="logo"> <a href="index.html"><img src="assets/img/general/pic_logo_light.webp" alt="piclogo"></a></div>
     <nav id="navbar" class="navbar navbar-expand-lg navbar-light"> 
-      <!-- navbar-light/bg-light or navbar-dark/bg-dark as needed --> 
-      <a class="navbar-brand d-lg-none" href="index.html"> <!-- optional brand for mobile view --> 
-      <img src="assets/img/general/pic_logo_light.webp" alt="piclogo-mobile" style="height: 40px;"> </a>
+      <a class="navbar-brand d-lg-none" href="index.html">
+      <img src="assets/img/general/pic_icon.ico" alt="piclogo-mobile" style="height: 40px;"> </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
-          <!-- or justify-content-end, accordingly -->
           <li><a href="#about">About Us</a></li>
           <li><a href="#operations">Operations</a></li>
           <li><a href="#portfolio">Multimedia Showcase</a></li>
@@ -214,6 +212,7 @@
       </div>
     </div>
   </section>
+	
   <section id="operations" class="services" aria-labelledby="operations-heading">
     <div class="container" data-aos="fade-up">
       <div class="section-title">
@@ -353,28 +352,10 @@
       </div>
       <!-- .swiper --> 
     </div>
-    <!-- .container --> 
-    
-    <!-- Modal for zoomed card -->
-    <div id="cardModal" class="card-modal" role="dialog" aria-modal="true" aria-hidden="true">
-      <div class="card-modal-inner" role="document">
-        <div style="display:flex;align-items:flex-start;justify-content:flex-end;padding:10px 14px;">
-          <button id="modalClose" class="modal-close" aria-label="Close details">&times;</button>
-        </div>
-        <div class="modal-grid">
-          <div class="modal-media"><img id="modalImg" src="" alt=""></div>
-          <div class="modal-content">
-            <h3 id="modalTitle" class="modal-title"></h3>
-            <p id="modalDesc" class="modal-desc"></p>
-            <div style="margin-top:auto;">
-              <button id="modalAction" class="modal-action">Contact / Enquire</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+    <!-- .container -->    
   </section>
-  <section id="portfolio" class="portfolio section-bg py-5">
+	
+<section id="portfolio" class="portfolio section-bg py-5">
     <div class="container">
       <div class="section-title text-center mb-4">
         <h2>Multimedia Showcase</h2>
@@ -793,7 +774,7 @@
         </div>
       </div>
     </div>
-  </section>
+</section>
   
   <!-- Gallery Section -->
   <section id="gallery" class="gallery-section bg-light py-5">
@@ -812,6 +793,7 @@
       </div>
     </div>
   </section>
+	
   <section id="videos" class="videos section-bg">
     <div class="vcontainer">
       <div class="section-title">
@@ -1057,15 +1039,15 @@
           <div class="info">
             <div class="address"> <i class="bx bx-current-location"></i>
               <h4>Location:</h4>
-              <p>#5/4, Subash Nagar, Ganapathy Post, Coimbatore - 641 006 (Near FCI Road)</p>
+              <p>No. 3/645,B-16, Rohini Garden, Yamuna Nagar, Somayampalayam, Coimbatore-641 108.</p>
             </div>
             <div class="email"> <i class="bx bxs-envelope"></i>
               <h4>Email:</h4>
-              <p>mrithyujayan.2018@gmail.com</p>
+              <p>epic2025.eee@gmail.com</p>
             </div>
             <div class="phone"> <i class="bx bxs-mobile-vibration"></i>
               <h4>Call:</h4>
-              <p>+91 82483 79140</p>
+              <p>+91 7845267303</p>
             </div>
           </div>
         </div>
@@ -1432,9 +1414,6 @@ document.querySelectorAll('.portfolio-card img').forEach(img => {
 document.querySelector('.lightbox .close').onclick = function() {
   document.getElementById('lightbox').style.display = "none";
 };
-</script> 
-
-<!-- Lightbox Modal -->
-<div id="lightbox" class="lightbox"> <span class="close">&times;</span> <img class="lightbox-img"> </div>
+</script>
 </body>
 </html>
